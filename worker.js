@@ -8,13 +8,17 @@ function isPersian(text) {
 
 async function getProductInfo(dkpCode) {
   try {
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), 4000);
     const url = `https://api.digikala.com/v1/product/${dkpCode}/`;
     const response = await fetch(url, {
+      signal: controller.signal,
       headers: {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)',
         'Accept': 'application/json',
       }
     });
+    clearTimeout(timer);
 
     if (response.ok) {
       const data = await response.json();
