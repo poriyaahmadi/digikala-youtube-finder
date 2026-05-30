@@ -20,8 +20,8 @@ export default {
     }
 
     // کلیدهای API
-    const YOUTUBE_API_KEY = "AIzaSyBi2u1KA7av4v6zC_E7bE4FQB1aP6eyq-c";
-    const GROK_API_KEY = "xai-qZB4ogwAcs4kyCRvLZO3d5MUe8WlLPnj3RQIVmjJfiOV2N8nm8H6t6KuHNpRREqvPRXxv5luLPfWdE7q";
+    const YOUTUBE_API_KEY = "-c";
+    const GROK_API_KEY = "xai-";
     
     // چندتا کلید یوتیوب برای مواقع ضرورت (اگه داری اضافه کن)
     const YOUTUBE_API_KEYS = [
